@@ -1,0 +1,341 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.24.2",
+    "script_metadata_hash": "8e26c7f166985e32868bbcb09ffa4a07"
+  },
+  "cells": [
+    {
+      "id": "setup",
+      "code_hash": "6f40f30abab5849aaf986862372ee9b3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hbol",
+      "code_hash": "96f23602d539ce353dc5c7547c024719",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"tdd-demo-fizzbuzz-with-marimo\">TDD Demo: FizzBuzz with marimo</h1>\n<span class=\"paragraph\">This notebook illustrates the <strong>Red \u2192 Green \u2192 Refactor</strong> cycle of\nTest-Driven Development. Each section below corresponds to a\ndevelopment step where we <strong>grow the contract</strong> of the\n<code>fizzbuzz</code> function one test at a time.</span>\n<span class=\"paragraph\">You can run the tests in two ways:</span>\n<ol>\n<li><strong>Inside marimo</strong>: cells whose name starts with <code>test_</code>\n   are automatically detected and run by pytest.</li>\n<li><strong>From the command line</strong>:\n   <div class=\"language-bash codehilite\"><pre><span></span><code>uv<span class=\"w\"> </span>run<span class=\"w\"> </span>pytest<span class=\"w\"> </span>tdd_fizzbuzz_marimo_en.py\n</code></pre></div></li>\n</ol></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "534e1f64ea39390f116e8cc9fb6506b0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"step-1-red-first-test-minimal-contract\">Step 1 \u2014 Red: first test, minimal contract</h2>\n<span class=\"paragraph\">Before writing a single line of <code>fizzbuzz</code>, we write the simplest\npossible test: for input <code>1</code>, we expect the output <code>\"1\"</code>.\nThis test would fail if the function didn't exist yet\n(<code>NameError</code>) \u2014 that's the <strong>Red</strong> phase.</span>\n<span class=\"paragraph\">We then write the <strong>minimal</strong> code that makes this test pass:\nsimply return <code>str(n)</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "58f06fa7729ca2cd6c7d469257f1ea54",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "00d808e36c6a1b8a9875884f456a232c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "7d4c73a2c63549c37b4876f9a0b9f6d8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"step-2-grow-the-contract-multiples-of-3\">Step 2 \u2014 Grow the contract: multiples of 3</h2>\n<span class=\"paragraph\">We add a rule to the contract: <em>\"if <code>n</code> is a multiple of 3,\nreturn <code>'Fizz'</code>\"</em>. We first write the test (Red), then\nchange the implementation to make it pass (Green), <strong>without\nbreaking the previous test</strong> (regression).</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "1db5755f370150a1dc2a8c79a92b3192",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "60a7533f774b9470f1f8bf4711a828f3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "7131c071f9ab3f36aaca4485c698aec4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "056777c5cbf8ade7d67a396de5c743d5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"step-3-new-rule-multiples-of-5\">Step 3 \u2014 New rule: multiples of 5</h2>\n<span class=\"paragraph\">Same approach: a new test describes the expected behavior for\nmultiples of 5, then we adapt the implementation.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "f6846115ad6005d592111d0b72a89707",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "c4221fc6ca46a4015e715e96f13ab199",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": "6e7aa77bf8bffd6b15cee7266878243e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "4a3abeec203392706fbe53d81787e85f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"step-4-the-trap-case-multiples-of-15\">Step 4 \u2014 The trap case: multiples of 15</h2>\n<span class=\"paragraph\">This is the most pedagogically interesting test: it reveals a\n<strong>bug</strong> in the current implementation. With <code>fizzbuzz_v3</code>, the\ninput <code>15</code> would return <code>\"Fizz\"</code> (the first matching <code>if</code>), while\nthe expected contract is <code>\"FizzBuzz\"</code>.</span>\n<span class=\"paragraph\">This test therefore fails first (<strong>Red</strong>), which forces us to\nrevisit the order of conditions or the logic (<strong>Green</strong>).</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "84463cecf978e5b2a082de7bc23b996d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "iLit",
+      "code_hash": "2672e5e4e52ae69db352a82f1540c1a7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZHCJ",
+      "code_hash": "df122ed783953e00e16ceda6edf36905",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ROlb",
+      "code_hash": "76b629c760de951e878fe014c347739a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"step-5-refactor-keep-the-behavior-improve-the-code\">Step 5 \u2014 Refactor: keep the behavior, improve the code</h2>\n<span class=\"paragraph\">The tests from the previous steps now form a <strong>safety net</strong>.\nWe can rewrite the implementation (for example by building the\nstring through concatenation rather than a cascade of <code>if</code>\nstatements) without fear of regression, since the whole test\nsuite must keep passing.</span>\n<span class=\"paragraph\">This is the version we'd consider the final contract of the\nfunction in production code.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "qnkX",
+      "code_hash": "323adaad99b7e1bbfbe3cf5c68cae1e3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TqIu",
+      "code_hash": "a2ff8d016079ab19e65c7ebe38c2b07b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"final-test-suite-parametrized\">Final test suite (parametrized)</h2>\n<span class=\"paragraph\">Once the contract is stable, we can group all the cases into a\nsingle parametrized test \u2014 more readable and easier to extend\nthan separate tests.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Vxnm",
+      "code_hash": "22e2e3e555d6bb8c307990a0a669116b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m                                                                [100%]\u001b[0m\n================================== Overview ===================================\nPassed Tests:\n\u001b[1m\u001b[32m\u001b[22m\u2713\u001b[0m\u001b[0m notebook.py::test_cases[1-1]\n\u001b[1m\u001b[32m\u001b[22m\u2713\u001b[0m\u001b[0m notebook.py::test_cases[2-2]\n\u001b[1m\u001b[32m\u001b[22m\u2713\u001b[0m\u001b[0m notebook.py::test_cases[3-Fizz]\n\u001b[1m\u001b[32m\u001b[22m\u2713\u001b[0m\u001b[0m notebook.py::test_cases[5-Buzz]\n\u001b[1m\u001b[32m\u001b[22m\u2713\u001b[0m\u001b[0m notebook.py::test_cases[6-Fizz]\n\u001b[1m\u001b[32m\u001b[22m\u2713\u001b[0m\u001b[0m notebook.py::test_cases[10-Buzz]\n\u001b[1m\u001b[32m\u001b[22m\u2713\u001b[0m\u001b[0m notebook.py::test_cases[15-FizzBuzz]\n\u001b[1m\u001b[32m\u001b[22m\u2713\u001b[0m\u001b[0m notebook.py::test_cases[30-FizzBuzz]\n\u001b[1m\u001b[32m\u001b[22m\u2713\u001b[0m\u001b[0m notebook.py::test_cases[100-Buzz]\n\nSummary:\nTotal: 9, Passed: 9, Failed: 0, Errors: 0, Skipped: 0\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "DnEU",
+      "code_hash": "499e06ae4a66087c9ce74a27f4aa891b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ulZA",
+      "code_hash": "a97b705a03d1ece69fe9b7634bc2d0b4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"explore-interactively\">Explore interactively</h2>\n<span class=\"paragraph\">Use the field below to call <code>fizzbuzz</code> on an integer of your\nchoice and see the result live \u2014 handy for a classroom demo.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ecfG",
+      "code_hash": "1d2a1e611f864977356c7b1b2a077849",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='ecfG-0' random-id='9163e94f-6c3b-92f0-8d49-14f7749aa3d7'><marimo-number data-initial-value='15' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003en&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='1' data-stop='1000' data-step='1' data-debounce='false' data-full-width='false' data-disabled='false'></marimo-number></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Pvdt",
+      "code_hash": "c299c58df1daa523944b1d9841046b35",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><code>fizzbuzz(28)</code> \u2192 <strong>28</strong></span></span>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
