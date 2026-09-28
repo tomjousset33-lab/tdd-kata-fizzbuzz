@@ -1,7 +1,7 @@
 [project]
 name = "fizzbuzz-tdd-kata-jousset"
 version = "0.1.0"
-description = "Add your description here"
+description = "a fizzbuzz test project"
 readme = "README.md"
 authors = [
     { name = "Tom Jousset", email = "tom.jousset@gmail.com" }

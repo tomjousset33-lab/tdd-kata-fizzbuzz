@@ -1,6 +1,6 @@
 import pytest
 
-from fizzbuzz_tdd_kata.core import fizzbuzz
+from fizzbuzz_tdd_kata_jousset.core import fizzbuzz
 
 
 @pytest.mark.parametrize(
