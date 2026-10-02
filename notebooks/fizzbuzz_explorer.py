@@ -13,9 +13,10 @@ __generated_with = "0.25.1"
 app = marimo.App(width="medium")
 
 with app.setup:
+    from collections import Counter
+
     import marimo as mo
     import matplotlib.pyplot as plt
-    from collections import Counter
 
     from fizzbuzz_tdd_kata_jousset import fizzbuzz
 
