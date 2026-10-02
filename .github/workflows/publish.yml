@@ -13,6 +13,7 @@ jobs:
 
   build-and-publish:
     needs: test                            # only runs if tests succeeded
+    environment: pypi
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
