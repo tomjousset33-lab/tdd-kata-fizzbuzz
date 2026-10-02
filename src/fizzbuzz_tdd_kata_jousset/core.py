@@ -18,4 +18,3 @@ def fizzbuzz(n: int) -> str:
     if n % 5 == 0:
         result += "Buzz"
     return result or str(n)
-    

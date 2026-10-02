@@ -3,4 +3,3 @@
 from fizzbuzz_tdd_kata_jousset.core import fizzbuzz
 
 __all__ = ["fizzbuzz"]
-
