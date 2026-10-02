@@ -10,7 +10,7 @@ requires-python = ">=3.14"
 dependencies = []
 
 [project.scripts]
-fizzbuzz-tdd-kata = "fizzbuzz_tdd_kata:main"
+fizzbuzz-kata = "fizzbuzz_tdd_kata_jousset.cli:main"
 
 [build-system]
 requires = ["uv_build>=0.12.17,<0.13.0"]
@@ -23,6 +23,7 @@ dev = [
     "ruff>=0.16.8",
     "pytest-cov>=5.0.0",
     "mypy>=2.4.0",
+    "matplotlib>=3.11.2",
 ]
 
 [tool.pytest.ini_options]
